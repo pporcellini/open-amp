@@ -84,7 +84,7 @@ if (NOT WITH_VIRTIO_DEVICE AND NOT WITH_VIRTIO_SLAVE)
 endif (NOT WITH_VIRTIO_DEVICE AND NOT WITH_VIRTIO_SLAVE)
 
 option (WITH_VIRTIO_MMIO "Build with virtio mmio (front end) enabled" ON)
-option (WITH_HVL_VIRTIO "Build with hypervisor-less virtio (front end) enabled" OFF)
+option (WITH_HVL_VIRTIO "Build with hypervisor-less virtio (front end) enabled" ON)
 
 if (WITH_VIRTIO_MMIO)
   add_definitions(-DWITH_VIRTIO_MMIO)
